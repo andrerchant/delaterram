@@ -1,0 +1,39 @@
+[14-Sep-2016 18:41:14 America/Chicago] PHP Fatal error:  Class 'PHPMailer' not found in /home/delaterr/public_html/prueba/php/phpmailer.php on line 12
+[14-Sep-2016 18:44:07 America/Chicago] PHP Fatal error:  Class 'PHPMailer' not found in /home/delaterr/public_html/prueba/php/phpmailer.php on line 13
+[14-Sep-2016 18:58:10 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/delaterr/public_html/prueba/php/phpmailer.php on line 68
+[14-Sep-2016 19:00:03 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/delaterr/public_html/prueba/php/phpmailer.php on line 67
+[15-Sep-2016 13:26:56 America/Chicago] PHP Fatal error:  Uncaught exception 'phpmailerException' with message 'SMTP Error: Could not connect to SMTP host.' in /home/delaterr/public_html/prueba/php/phpmailer/class.phpmailer.php:1624
+Stack trace:
+#0 /home/delaterr/public_html/prueba/php/phpmailer/class.phpmailer.php(1486): PHPMailer->smtpConnect(Array)
+#1 /home/delaterr/public_html/prueba/php/phpmailer/class.phpmailer.php(1323): PHPMailer->smtpSend('Date: Thu, 15 S...', 'This is a multi...')
+#2 /home/delaterr/public_html/prueba/php/phpmailer/class.phpmailer.php(1203): PHPMailer->postSend()
+#3 /home/delaterr/public_html/prueba/php/phpmailer.php(74): PHPMailer->send()
+#4 {main}
+  thrown in /home/delaterr/public_html/prueba/php/phpmailer/class.phpmailer.php on line 1624
+[19-Sep-2016 13:21:59 America/Chicago] PHP Fatal error:  Class 'SMTP' not found in /home/delaterr/public_html/prueba/php/phpmailer/class.phpmailer.php on line 1466
+[19-Sep-2016 13:23:50 America/Chicago] PHP Fatal error:  Class 'SMTP' not found in /home/delaterr/public_html/prueba/php/phpmailer/class.phpmailer.php on line 1466
+[19-Sep-2016 13:24:04 America/Chicago] PHP Fatal error:  Class 'SMTP' not found in /home/delaterr/public_html/prueba/php/phpmailer/class.phpmailer.php on line 1466
+[19-Sep-2016 13:26:21 America/Chicago] PHP Fatal error:  Uncaught exception 'phpmailerException' with message 'SMTP Error: Could not connect to SMTP host.' in /home/delaterr/public_html/prueba/php/phpmailer/class.phpmailer.php:1624
+Stack trace:
+#0 /home/delaterr/public_html/prueba/php/phpmailer/class.phpmailer.php(1486): PHPMailer->smtpConnect(Array)
+#1 /home/delaterr/public_html/prueba/php/phpmailer/class.phpmailer.php(1323): PHPMailer->smtpSend('Date: Mon, 19 S...', 'This is a multi...')
+#2 /home/delaterr/public_html/prueba/php/phpmailer/class.phpmailer.php(1203): PHPMailer->postSend()
+#3 /home/delaterr/public_html/prueba/php/phpmailer.php(74): PHPMailer->send()
+#4 {main}
+  thrown in /home/delaterr/public_html/prueba/php/phpmailer/class.phpmailer.php on line 1624
+[19-Sep-2016 13:26:58 America/Chicago] PHP Fatal error:  Uncaught exception 'phpmailerException' with message 'SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting' in /home/delaterr/public_html/prueba/php/phpmailer/class.phpmailer.php:1487
+Stack trace:
+#0 /home/delaterr/public_html/prueba/php/phpmailer/class.phpmailer.php(1323): PHPMailer->smtpSend('Date: Mon, 19 S...', 'This is a multi...')
+#1 /home/delaterr/public_html/prueba/php/phpmailer/class.phpmailer.php(1203): PHPMailer->postSend()
+#2 /home/delaterr/public_html/prueba/php/phpmailer.php(74): PHPMailer->send()
+#3 {main}
+  thrown in /home/delaterr/public_html/prueba/php/phpmailer/class.phpmailer.php on line 1487
+[19-Sep-2016 13:27:11 America/Chicago] PHP Fatal error:  Class 'SMTP' not found in /home/delaterr/public_html/prueba/php/phpmailer/class.phpmailer.php on line 1466
+[19-Sep-2016 13:27:20 America/Chicago] PHP Fatal error:  Class 'PHPMailer' not found in /home/delaterr/public_html/prueba/php/phpmailer.php on line 44
+[19-Sep-2016 13:27:26 America/Chicago] PHP Fatal error:  Class 'SMTP' not found in /home/delaterr/public_html/prueba/php/phpmailer/class.phpmailer.php on line 1466
+[19-Sep-2016 13:28:18 America/Chicago] PHP Fatal error:  Class 'SMTP' not found in /home/delaterr/public_html/prueba/php/phpmailer/class.phpmailer.php on line 1466
+[19-Sep-2016 14:10:33 America/Chicago] PHP Parse error:  syntax error, unexpected ''' (T_CONSTANT_ENCAPSED_STRING) in /home/delaterr/public_html/prueba/php/phpmailer.php on line 49
+[28-Mar-2018 12:02:31 America/Chicago] PHP Warning:  assert(): Assertion failed in /home/delaterr/public_html/php/_config.php on line 3
+[28-Mar-2018 12:02:31 America/Chicago] PHP Warning:  Unexpected character in input:  '' (ASCII=1) state=0 in /home/delaterr/public_html/php/_config.php(3) : assert code on line 1
+[28-Mar-2018 12:02:32 America/Chicago] PHP Warning:  Unexpected character in input:  '' (ASCII=1) state=0 in /home/delaterr/public_html/php/_config.php(3) : assert code on line 1
+[01-Apr-2018 03:41:03 America/Chicago] PHP Warning:  Unexpected character in input:  '' (ASCII=1) state=0 in /home/delaterr/public_html/php/_config.php(3) : assert code on line 1
