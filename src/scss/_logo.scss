@@ -1,88 +1,35 @@
 header {
     background-color: #1717179e;
-    height: 4.7rem;
-    margin-bottom: 3rem;
-
-    @media(max-width: $bp-small) {
-        height: 138px;
-        margin-bottom: 2rem;
-    }
-    @media(max-width: $bp-xsmall) {
-        margin-bottom: 5rem;
-    }
 
     .layout {
         display: flex;
         justify-content: center;
-    
-        #ramas path,
-        #ramas circle {
-            fill: white;
-            transition: fill ease 0.3s;
-        }
-    }
-
-    &:hover {
-        .layout {
-            #ramas {
+        margin: 0;
+        padding: 1.6rem 0rem 0.5rem 0rem;
+        
+        svg {
+            cursor: pointer;
+            height: 3.6rem;
+            width: 13rem;
+        
+            #ramas_container {
                 path,
                 circle {
-                    fill: rgb(255, 233, 159);
+                    fill: white;
+                    transition: fill ease 0.5s;
+                    will-change: fill;
                 }
             }
         }
-    }
-
-    &:before {
-        background-position: bottom center;
-        content: "";
-        display: inline-block;
-        height: 9rem;
-        position: absolute;
-        width: 100%;
-
-        @media(max-width: $bp-small) {
-            background-size: 200% 207%;
-            height: 9rem;
-            top: 57px;
-        }
-        @media(max-width: $bp-small) {
-            background-size: 200% 209%;
-            height: 9rem;
-            top: 94px;
-        }
-    }
-}
-
-figure {
-    cursor: pointer;
-    display: inline-block;
-    margin: 0 auto;
-    vertical-align: middle;
-
-    @media(max-width: $bp-small) {
-        text-align: center;
-    }
-
-    svg {
-        cursor: pointer;
-        height: 3.6rem;
-        padding: 0.8rem 0;
-        position: absolute;
-        top: 0;
-        width: 13rem;
     
-        @media(max-width: $bp-large) {
-            width: 40%;
-        }
-        @media(max-width: $bp-small) {
-            margin: auto;
-            right: 0;
-            left: 0;
-            width: 65%;
-        }
-        @media(max-width: $bp-xsmall) {
-            width: 80%;
+    }
+
+    &:hover {
+        #ramas_container {
+            path,
+            circle {
+                fill: cornsilk;
+            }
         }
     }
 }

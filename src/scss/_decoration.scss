@@ -28,12 +28,15 @@
         box-shadow: inset 2px 2px 8px rgba(0, 0, 0, 0.6);
         margin: 57px 49px;
         padding: 0;
-        -webkit-transform: scale(1.5);
-        -ms-transform: scale(1.5);
         transform: scale(1.5);
         transition: border ease 0.3s, transform ease 0.3s;
 
         will-change: border;
+
+        @media(max-width: $bp-xsmall) {
+            transform: none;
+            margin: 0;
+        }
 
         span {
             background-color: #493225;
