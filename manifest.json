@@ -1,0 +1,9 @@
+{
+  "name": "De la Terram",
+  "short_name": "delaterram",
+  "lang": "es-MX",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#3f3112",
+  "background_color": "#1e1e1e",
+}
