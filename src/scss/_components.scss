@@ -1,0 +1,123 @@
+footer {
+    margin-top: 6rem;
+    background: #342518ed;
+    color: white;
+    text-align: center;
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+    article {
+        display: inline-block;
+        vertical-align: middle;
+        padding: 0 1rem;
+
+        &:nth-child(2) {
+            border-left: 1px solid white;
+            text-align: left;
+        }
+
+        @media(max-width: $bp-medium) {
+            display: block;
+            border: none !important;
+            text-align: left;
+        }
+
+    }
+
+    .fix_footer {
+        padding: 1rem 0;
+        font-size: .8rem;
+    }
+}
+
+nav {
+    box-sizing: border-box;
+    display: inline-block;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    vertical-align: middle;
+
+    @media(max-width: $bp-small) {
+        display: block;
+        position: absolute;
+        text-align: center;
+        margin: 4rem auto auto;
+        padding-bottom: 1.5rem;
+        right: 0;
+        left: 0;
+    }
+
+    button {
+        @media(max-width: $bp-small) {
+            font-size: 1.5rem;
+            padding: 10px;
+        }
+        @media(max-width: $bp-xsmall) {
+            margin: 0.5rem 0;
+        }
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+section {
+    /*background-color: rgba(179, 56, 56, 0.6);*/
+    padding: 20px 0;
+
+    article {
+        margin: 25px auto;
+        text-align: center;
+        width: 80%;
+
+        & * {
+            text-align: center;
+            vertical-align: middle;
+            outline: none;
+        }
+        figure {
+            background: #67382e; /*$cafe*/
+            background-position: center;
+            background-size: cover;
+            /* border: 8px solid #67382e; */
+            border-radius: 100%;
+            display: inline-block;
+            box-shadow: 0 12px 4px -7px #00000054, 2px 9px 10px 0 #00000069, -5px 6px 12px -5px #000c;
+            height: 11rem;
+            width: 12rem;
+            margin: 0 0.5rem;
+        }
+        p {
+            color: white;
+            display: inline-block;
+            font-family: helvetica, arial, sans-serif;
+            text-align: left;
+            padding: 2rem;
+            width: 68%;
+        }
+    }
+
+    .cta {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1.4rem;
+
+        a {
+            text-decoration: none;
+        }
+        button {
+            background: linear-gradient(15deg, rgb(14 14 14 / 67%), rgb(68 67 67 / 78%));
+            box-shadow: 0 14px 15px -11px #000000c4;
+            width: 11.2rem;
+            height: 4.8rem;
+            font-size: 1.8rem;
+            font-variant-caps: all-small-caps;
+        }
+    }
+}

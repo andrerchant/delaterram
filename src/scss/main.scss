@@ -1,0 +1,116 @@
+@import '_variables';
+@import '_components';
+@import '_logo';
+@import 'shared';
+@import '_visualizer';
+
+html {
+    background-color: #67382e; /*$cafe*/
+}
+
+body {
+    background-color: #ed7e61; /*$naranja*/
+    background: url(../assets/images/bg2.jpg)no-repeat fixed;
+    background-size: cover;
+    background-position: top;
+    font-family: helvetica, arial, sans-serif;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    height: inherit;
+}
+
+a,
+button {
+    outline: none;
+}
+
+button {
+    background: none;
+    border: 2px solid #fff6;
+    border-radius: 0.2rem;
+    color: white;
+    cursor: pointer;
+    font-family: 'antonio';
+    font-size: 1rem;
+    margin: 0 0.3rem;
+    padding: 0.4rem 0.7rem;
+
+    &:hover {
+        border-color: #fff;
+    }
+}
+
+h2 {
+    color: white;
+    display: block;
+    font-family: "lobster";
+    text-align: left;
+}
+
+video {
+    background: url(../assets/images/video.png)no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    cursor: pointer;
+    height: 34%;
+    max-height: 351px;
+    min-height: 93px;
+    max-width: 600px;
+    padding: 32px 42px;
+    width: 78%;
+    
+    @media(max-width: $bp-small) {
+        width: 88%;
+    }
+    @media(max-width: $bp-xsmall) {
+        padding: 1rem;
+    }
+}
+
+fieldset {
+    background: rgba(203, 116, 61, 0.62) !important;
+    color: white;
+    margin: auto !important;
+    width: 50%;
+
+    & * {
+        display: block;
+        margin: 4px 0;
+    }
+}
+label {
+    cursor: pointer;
+}
+legend {
+    background: rgba(142, 131, 33, 0.73);
+    border: 2px solid white;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+input,
+textarea {
+    background: rgb(127, 82, 73);
+    border: 2px solid #46241d;
+    border-radius: 5px;
+    color: #fee895;
+    font-family: helvetica, arial, sans-serif;
+    font-size: 14px;
+    padding: 4px;
+}
+
+textarea {
+    @media(max-width: $bp-small) {
+        width: 80%;
+    }
+};
+
+.radio_btns * {
+    cursor: pointer;
+    display: inline-block;
+}
+
+#name-txt {
+    text-transform: capitalize;
+}

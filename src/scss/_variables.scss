@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'lobster';
+    src: url('../assets/font/lobster-regular-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'antonio';
+    src: url('../assets/font/antonio-regular-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$bp-xsmall: 450px;
+$bp-small: 600px;
+$bp-medium: 768px;
+$bp-large: 1024px;
+$bp-xlarge: 1280px;
+$bp-xxlarge: 1448px;

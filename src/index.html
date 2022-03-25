@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>De La Terram</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
+
+    <script type="module" src="main.bundle.min.js"></script>
+
+</head>
+
+<body>
+    <div class="fxd_fondo">
+        <div class="fxd_vista">
+            <button class="cerrar">❌</button>
+            <div class="fxd_imagen" pos=""></div>
+            <button class="ant"> &loarr;</button>
+            <button class="sig"> &roarr; </button>
+            <small>Usa las flechas <span>&loarr;</span> <span>&roarr;</span> para moverte y la tecla
+                <span>esc</span> para salir.</small>
+        </div>
+    </div>
+    <header>
+        <figure class="layout">
+            <svg id="ramas_container" class="anim" tiempo="800" Tanimacion="linear" x="0px" y="0px" width="967px" height="295px"
+                viewBox="0 0 967 295" enable-background="new 0 0 967 295" xml:space="preserve">
+                <g id="logotipo">
+                    <path fill="#FFFFFF" d="M8.333,61.21H51.49c5.325,0,10.287,0.674,14.887,2.022c4.598,1.348,8.593,3.614,11.982,6.795
+                        c3.388,3.183,6.051,7.349,7.988,12.501c1.935,5.152,2.905,11.499,2.905,19.037c0,7.609-0.969,13.971-2.905,19.088
+                        c-1.937,5.119-4.601,9.27-7.988,12.449c-3.389,3.182-7.384,5.447-11.982,6.795c-4.601,1.35-9.562,2.023-14.887,2.023H8.333v-17.015
+                        h6.225V78.222H8.333V61.21z M49.622,124.907c2.35,0,4.114-0.605,5.291-1.816c1.175-1.209,1.764-3.164,1.764-5.86V85.9
+                        c0-2.697-0.622-4.649-1.867-5.86c-1.245-1.21-2.975-1.816-5.187-1.816h-6.017v46.684H49.622z" />
+                    <path fill="#FFFFFF" d="M140.604,78.224h-12.553v16.391h9.129v11.827h-9.129v18.466h12.553v-16.391h23.238v33.404H92.779v-17.014
+                        h6.225V78.224h-6.225V61.21h71.064v31.33h-23.238L140.604,78.224L140.604,78.224z" />
+                    <path fill="#FFFFFF" d="M218.315,61.21h44.817v17.014h-9.544v46.684h9.337v-9.544h20.645v26.558h-65.254v-17.014h6.225V78.224
+                        h-6.225L218.315,61.21L218.315,61.21z" />
+                    <path fill="#FFFFFF" d="M327.554,124.907h6.225l-1.764-8.195H318.01l-1.66,8.195h6.225v17.014h-35.48v-17.014h4.15l17.532-63.697
+                        h37.762l17.532,63.697h4.15v17.014h-40.667V124.907L327.554,124.907z M320.293,105.716h9.544l-4.254-20.748h-1.037L320.293,105.716
+                        z" />
+                    <path fill="#FFFFFF" d="M401.625,61.21h78.014v25.209h-17.844v-8.195h-6.639v46.684h7.262v17.014h-43.571v-17.014h7.263V78.224
+                        h-6.64v8.195h-17.844L401.625,61.21L401.625,61.21z" />
+                    <path fill="#FFFFFF" d="M530.368,78.224h-12.552v16.391h9.129v11.827h-9.129v18.466h12.552v-16.391h23.239v33.404h-71.064v-17.014
+                        h6.225V78.224h-6.225V61.21h71.064v31.33h-23.239V78.224z" />
+                    <path fill="#FFFFFF" d="M594.065,124.907h6.847v17.014h-42.119v-17.014h6.225V78.224h-6.225V61.21h48.655
+                        c4.218,0,8.04,0.414,11.463,1.244c3.424,0.83,6.311,2.163,8.663,3.994c2.351,1.833,4.166,4.237,5.447,7.21
+                        c1.277,2.976,1.919,6.606,1.919,10.894c0,4.564-0.917,8.543-2.749,11.931c-1.833,3.389-4.513,5.774-8.04,7.157l0.104,1.037
+                        c6.641,1.039,9.959,5.119,9.959,12.242v7.988h4.876v17.014h-32.885v-24.379c0-2.076-0.227-3.752-0.675-5.031
+                        c-0.45-1.279-1.177-2.248-2.179-2.905c-1.003-0.657-2.267-1.104-3.786-1.349c-1.522-0.242-3.355-0.363-5.498-0.363v17.014H594.065z
+                         M599.667,95.237c2.005,0,3.509-0.52,4.512-1.557c1.002-1.037,1.504-2.73,1.504-5.084v-3.734c0-2.35-0.503-4.046-1.504-5.083
+                        c-1.003-1.038-2.507-1.556-4.512-1.556h-5.602v17.014H599.667z" />
+                    <path fill="#FFFFFF" d="M678.51,124.907h6.848v17.014h-42.119v-17.014h6.225V78.224h-6.225V61.21h48.654
+                        c4.219,0,8.04,0.414,11.463,1.244c3.425,0.83,6.312,2.163,8.663,3.994c2.352,1.833,4.166,4.237,5.447,7.21
+                        c1.278,2.976,1.919,6.606,1.919,10.894c0,4.564-0.917,8.543-2.749,11.931c-1.833,3.389-4.512,5.774-8.04,7.157l0.104,1.037
+                        c6.64,1.039,9.959,5.119,9.959,12.242v7.988h4.876v17.014H690.65v-24.379c0-2.076-0.227-3.752-0.676-5.031
+                        s-1.176-2.248-2.178-2.905c-1.003-0.657-2.267-1.104-3.787-1.349c-1.521-0.242-3.354-0.363-5.498-0.363v17.014H678.51z
+                         M684.112,95.237c2.005,0,3.509-0.52,4.512-1.557c1.002-1.037,1.504-2.73,1.504-5.084v-3.734c0-2.35-0.503-4.046-1.504-5.083
+                        c-1.003-1.038-2.507-1.556-4.512-1.556h-5.603v17.014H684.112z" />
+                    <path fill="#FFFFFF" d="M767.314,124.907h6.224l-1.763-8.195H757.77l-1.659,8.195h6.225v17.014h-35.479v-17.014h4.148
+                        l17.532-63.697h37.763l17.532,63.697h4.149v17.014h-40.666V124.907L767.314,124.907z M760.051,105.716h9.545l-4.254-20.748h-1.038
+                        L760.051,105.716z" />
+                    <path fill="#FFFFFF"
+                        d="M811.091,61.21h49.59l11.826,35.584l11.412-35.584h47.825v17.014h-6.225v46.684h6.225v17.014h-41.497
+                        v-17.014h6.224V83.929l-20.644,57.992h-11.205l-23.445-58.199v41.186h6.226v17.014h-36.312v-17.014h6.226V78.224h-6.226V61.21z" />
+                    <circle fill="#FFFFFF" cx="22.285" cy="20.385" r="16.852" />
+                    <circle fill="#FFFFFF" cx="68.151" cy="20.385" r="16.852" />
+                    <circle fill="#FFFFFF" cx="114.915" cy="20.385" r="16.852" />
+                    <circle fill="#FFFFFF" cx="160.782" cy="20.385" r="16.852" />
+                    <circle fill="#FFFFFF" cx="439.486" cy="20.385" r="16.852" />
+                    <circle fill="#FFFFFF" cx="237.254" cy="20.385" r="16.852" />
+                    <circle fill="#FFFFFF" cx="283.12" cy="20.385" r="16.852" />
+                    <circle fill="#FFFFFF" cx="329.884" cy="20.385" r="16.852" />
+                    <circle fill="#FFFFFF" cx="483.46" cy="20.385" r="16.852" />
+                    <circle fill="#FFFFFF" cx="530.224" cy="20.385" r="16.852" />
+                    <circle fill="#FFFFFF" cx="576.091" cy="20.385" r="16.852" />
+                    <circle fill="#FFFFFF" cx="620.156" cy="20.385" r="16.852" />
+                    <circle fill="#FFFFFF" cx="666.021" cy="20.385" r="16.852" />
+                    <circle fill="#FFFFFF" cx="712.786" cy="20.385" r="16.852" />
+                    <circle fill="#FFFFFF" cx="758.653" cy="20.385" r="16.852" />
+                    <circle fill="#FFFFFF" cx="803.614" cy="20.385" r="16.852" />
+                    <circle fill="#FFFFFF" cx="849.481" cy="20.385" r="16.852" />
+                    <circle fill="#FFFFFF" cx="896.245" cy="20.385" r="16.852" />
+                </g>
+
+                <g id="anim">
+                    <path id="rama_1" fill="#FFFFFF" d="" />
+                    <path id="rama_3" fill="#FFFFFF" d="" />
+                    <path id="rama_2" fill="#FFFFFF" d="" />
+                </g>
+
+
+            </svg>
+        </figure>
+    </header>
+
+    <section class="cuerdas">
+        <article>
+            <video id="v_terram" tabindex="0" controls poster="assets/images/PromoFoto_mid.jpg">
+                <source src="assets/videos/delaterr.mp4" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
+                <source src="assets/videos/delaterr.webm" type="video/webm; codecs=&quot;vp8, vorbis&quot;">
+                Tu navegador no reproduce videos. Por favor usa un navegador actualizado (Chrome, Firefox, Opera).
+            </video>
+        </article>
+    </section>
+
+    <section class="wood">
+        <article>
+            <figure class="fig" img="mermelada2.jpg"></figure>
+            <figure class="fig" img="mermelada4.jpg"></figure>
+            <figure class="fig" img="mermelada6.jpg"></figure>
+        </article>
+    </section>
+
+    <section class="info">
+        <article>
+            <p class="encuadre">Somos productores de higo y pensamos en compartir el exquisito sabor y propiedades
+                nutracéuticas de esta planta que disfrutaban, desde remotos tiempos, los atletas y filósofos griegos.
+            </p>
+            <figure class="fig mid-size" img="mermelada3.jpg"></figure>
+        </article>
+    </section>
+
+
+    <section class="wood2">
+        <article>
+            <p class="hard letra-media">Conoce nuestros productos:</p>
+        </article>
+    </section>
+
+    <section class="cuerdas">
+        <article>
+            <figure class="fig productos" img="mermelada7.jpg"><span>Mermelada</span></figure>
+            <figure class="fig productos" img="mermelada8.jpg"><span>Higo deshidratado</span></figure>
+        </article>
+    </section>
+
+    <section class="cta">
+        <a href="mailto:ventas@delaterram.com">
+            <button>
+                Ventas
+            </button>
+        </a>
+        <a href="tel:017351020675" rel="01 (735) 102 0675">
+            <button>
+                Teléfono
+            </button>
+        </a>
+    </section>
+
+    <footer>
+        <div class="fix_footer">
+            <article> De la terram &reg; 2021 Todos los derechos reservados</article>
+        </div>
+    </footer>
+
+</body>
+
+</html>

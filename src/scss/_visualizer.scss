@@ -1,0 +1,123 @@
+.fxd_fondo {
+    background: linear-gradient(0deg, #393939,#4a4a4aed);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+}
+
+.fxd_vista {
+    margin: auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    max-width: 80%;
+    max-height: 66%;
+
+    button {
+        font-family: sans-serif;
+    }
+    small {
+        color: #fff;
+        display: block;
+        margin-top: 13px;
+        text-align: center;
+
+        span {
+            background: silver;
+            border: 2px solid #4c4b4b;
+            border-radius: 3px;
+            box-shadow: inset 0 -3px 0 #9a9999;
+            color: black;
+            font-size: 14px;
+            padding: 1px 3px;
+        }
+    }
+}
+
+.fxd_imagen {
+    background-color: rgb(0 0 0 / 39%);
+    /*background: url(../assets/images/photos/mermelada1.jpg);*/
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    /* background-size: cover !important; */
+    box-shadow: 13px 21px 5px -15px #0003, 15px 13px 21px -4px #00000059, -14px 10px 21px -4px #00000061;
+    /* border: 9px solid #351606; */
+    width: 100%;
+    height: 100%;
+}
+
+.catalogo-view {
+    background-color: #dcdcdc;
+    border-radius: 12px;
+    border: 3px solid silver;
+    display: none;
+    height: 650px;
+    height: 80vh;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 90%;
+    z-index: 9;
+}
+
+.cerrar {
+    background: rgba(142, 142, 142, 0.82);
+    position: absolute;
+    top: -1.3rem;
+    right: -1.2rem;
+    border-radius: 100%;
+    height: 2.5rem;
+    width: 2.5rem;
+    line-height: 0;
+    margin: unset;
+    padding: unset;
+    font-size: 1.2rem;
+}
+
+.cerrar-view {
+    background: gray;
+    border-radius: 5rem;
+    color: white;
+    cursor: pointer;
+    display: none;
+    font: lighter 33px arial;
+    padding: 0 8px;
+    position: fixed;
+    top: 6%;
+    right: 4%;
+    z-index: 80;
+    will-change: transform;
+    transition: transform cubic-bezier(0.25, 0.1, 0.25, 1) 0.2s;
+
+    &:hover {
+        -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        transform: scale(0.8);
+    }
+    &:active {
+        -webkit-transform: scale(0.6);
+        -ms-transform: scale(0.6);
+        transform: scale(0.6);
+    }
+}
+
+.ant,
+.sig {
+    position: fixed;
+    top: 48%;
+    left: 2vw;
+    font-size: 3rem;
+    line-height: 0;
+    height: 3.4rem;
+    padding: 0 10px 2px;
+}
+.sig {
+    left: unset;
+    right: 2vw;
+}
