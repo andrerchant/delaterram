@@ -22,7 +22,7 @@
         transform: scale(1.2) !important;
     }
 
-    .productos {
+    &.productos {
         border-radius: 3px;
         border: 8px solid #493225;
         box-shadow: inset 2px 2px 8px rgba(0, 0, 0, 0.6);
@@ -57,7 +57,7 @@
         }        
     }
 
-@media(min-width: $bp-xlarge){
+    @media(min-width: $bp-xlarge){
 
         &:not(.productos) {
             transform: unset !important;

@@ -13,7 +13,7 @@ export default function dynamicLogo() {
 		s;
 
 	const vectores = {
-		ramas: {
+		ramas_container: {
 			fijo: {
 				rama_1: "M76.282,68.935c0,0,8.796,49.051-20.523,95.107C40.98,187.246,3.573,223.32,15.693,254.746        c12.13,31.417,16.45,28.866,16.45,28.866s-9.084-6.698-9.422-29.722c-0.617-42.699,32.503-64.843,53.388-98.261C96.993,122.224,90.138,75.559,76.282,68.935z",
 				rama_2: "M443.62,185.772c-10.102-13.563-20.141-27.265-21.734-44.514c-0.184-2.339-1.006-19.463,5.992-15.694c-3.82-5.443-11.837-5.102-16.761,3.176c-16.836,28.742,17.998,55.467,33.453,75.249c8.454,10.816,9.965,21.538,8.86,32.387c-12.069,19.192-48.547,18.954-46.185,51.624c3.563-29.527,27.464-24.35,44.073-39.381c-1.106,4.926-2.414,9.894-3.537,14.925C467.307,237.13,462.267,210.908,443.62,185.772z",
@@ -39,8 +39,8 @@ export default function dynamicLogo() {
 
 
 	const initSVG = () => {
-		Object.keys(vectores.ramas.fijo).forEach(ramaName =>
-			document.querySelector(`#${ramaName}`).setAttribute('d', vectores.ramas.fijo[ramaName])
+		Object.keys(vectores.ramas_container.fijo).forEach(ramaName =>
+			document.querySelector(`#${ramaName}`).setAttribute('d', vectores.ramas_container.fijo[ramaName])
 		)
 		audios.forEach((audio, index) => rola[`efecto${index}`] = new Audio(`assets/videos/${audio}.mp3`));
 	}
@@ -103,7 +103,6 @@ export default function dynamicLogo() {
 	};
 
 	window.addEventListener('load', ()=>{
-		console.log('this actually happened')
 		initSVG();
 		new SVGTransform(document.querySelector('.layout'));
 	})

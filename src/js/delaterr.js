@@ -100,7 +100,6 @@ export default class delaterrApp {
 		})
 
 		document.addEventListener('keydown', e => {
-			e.preventDefault();
 			switch (e.key) {
 				case 'ArrowRight':
 					manageImages({ forward: true })
