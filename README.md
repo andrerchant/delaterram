@@ -1,6 +1,6 @@
 # delaterram
 
-Empty project.
+Delaterram info website
 
 ## Building and running on localhost
 
@@ -13,21 +13,22 @@ npm install
 To create a production build:
 
 ```sh
-npm run build-prod
+npm run build
 ```
 
 To create a development build:
 
 ```sh
-npm run build-dev
+npm start
 ```
 
 ## Running
 
+After
 ```sh
-node dist/bundle.js
+npm start
 ```
-
+Open localhost:8080
 ## Credits
 
-Made with [createapp.dev](https://createapp.dev/)
+Julia Merchant
