@@ -1,15 +1,12 @@
 const path = require('path');
+const CopyPlugin = require("copy-webpack-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const config = (isProd, plugins) => ({
   mode: isProd ? 'production' : 'development',
   entry: './src/js/app.js',
   devtool: isProd ? 'nosources-source-map' : 'source-map',
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: './src/index.html'
-    }),
-  ],
+  plugins,
   devServer: {
     static: './dist',
   },
@@ -20,10 +17,6 @@ const config = (isProd, plugins) => ({
   },
   module: {
     rules: [
-      {
-        test: require.resolve('snapsvg/dist/snap.svg.js'),
-        use: 'imports-loader?this=>window,fix=>module.exports=0',
-      },
       {
         test: /\.js$/,
         use: 'babel-loader',
@@ -37,8 +30,11 @@ const config = (isProd, plugins) => ({
           {
             loader: "sass-loader",
             options: {
-              // Prefer `dart-sass`
               implementation: require("sass"),
+              sourceMap: isProd,
+              sassOptions: {
+                outputStyle: "compressed",
+              },
             },
           },
         ],
@@ -71,7 +67,21 @@ const config = (isProd, plugins) => ({
 module.exports = (env) => {
   console.log('Production: ', !!env.production); // true
   const isProd = env.production;
-  const plugins = [];
+  const plugins = [
+    new HtmlWebpackPlugin({
+      template: './src/index.html'
+    }),
+    new CopyPlugin({
+      patterns: [
+        { from: './src/favicon.ico' },
+        { from: './src/manifest.json' },
+        { from: './src/assets/videos', to: 'assets/videos' },
+        { from: './src/assets/images/icons', to: 'assets/images/icons' },
+        { from: './src/assets/images/photos', to: 'assets/images/photos' },
+        { from: './src/assets/images/PromoFoto_mid.jpg', to: 'assets/images' }
+      ]
+    }),
+  ];
 
-  return config(isProd, {plugins});
+  return config(isProd, plugins);
 };
